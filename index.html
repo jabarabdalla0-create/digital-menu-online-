@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f1e9" />
+    <meta name="description" content="Costa Café menu" />
+    <title>Café Costa — Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Costa Café">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span class="brand-name">CAFÉ COSTA</span>
+      </a>
+      <div class="header-tools">
+        <label class="language-label">
+          <span class="sr-only" data-i18n="language">Language</span>
+          <select id="language" aria-label="Choose language">
+            <option value="en">EN</option>
+            <option value="ku">کوردی</option>
+            <option value="ar">عربي</option>
+          </select>
+        </label>
+        <button
+          class="icon-button theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Toggle dark mode"
+        >
+          <span id="themeIcon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="menu-section" id="menu" aria-labelledby="menuTitle">
+        <div class="section-heading">
+          <div class="heading-mark" aria-hidden="true">✳</div>
+          <h1 id="menuTitle" data-i18n="menu">Menu</h1>
+          <span class="heading-rule" aria-hidden="true"></span>
+        </div>
+        <div class="menu-tools">
+          <div
+            class="category-list"
+            id="categoryList"
+            role="tablist"
+            aria-label="Menu categories"
+          ></div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search menu"
+              aria-label="Search menu"
+            />
+          </label>
+        </div>
+        <div class="result-line" aria-live="polite">
+          <span id="resultCount"></span>
+          <span class="price-note" data-i18n="priceNote"
+            >All prices in Iraqi dinars (IQD)</span
+          >
+        </div>
+        <div id="menuContent" class="menu-content"></div>
+        <div id="emptyState" class="empty-state" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h2 data-i18n="noResults">No items found</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <a class="footer-brand" href="#top">COSTA CAFÉ</a>
+      <div class="footer-links">
+        <p>
+          Developed by
+          <a href="https://jabarabdulla.freedev.app/">jabar</a>
+        </p>
+        <a
+          href="https://www.instagram.com/cafe_costath?igsi=cTZpMGg3YmQwcHNn&amp;utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Costa Café on Instagram"
+          ><span aria-hidden="true">◎</span> Instagram ↗</a
+        >
+        <a href="mailto:Caffe.costath@gmail.com"
+          ><span aria-hidden="true">✉</span> Caffe.costath@gmail.com</a
+        >
+      </div>
+    </footer>
+    <script src="script.js?v=2"></script>
+  </body>
+</html>
